@@ -43,24 +43,14 @@ ex = ["band walking",
       "wall sits",
       "windmills"]
 
-
-function makeUL(array) {
-    // Create the list element:
-    var list = document.createElement('ul');
-
-    for(var i = 0; i < array.length; i++) {
-        // Create the list item:
-        var item = document.createElement('li');
-
-        // Set its contents:
-        item.appendChild(document.createTextNode(array[i]));
-
-        // Add it to the list:
-        list.appendChild(item);
-    }
-
-    // Finally, return the constructed list:
-    return list;
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-document.getElementById('exlist').innerHTML = (ex.sort(() => .5 - Math.random())).slice(0,10);
+names = (ex.sort(() => .5 - Math.random())).slice(0,getRandomInt(6,10));
+nameList = "<ol>";
+for (var i = 0, name; name = names[i]; i++) {
+  nameList += "<li>" + name + "</li>";
+}
+nameList += "</ol>"
+document.getElementById('exlist').innerHTML = nameList;
