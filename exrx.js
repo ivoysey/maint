@@ -41,7 +41,32 @@ ex = ["band walking",
       "v ups",
       "walking lunges",
       "wall sits",
-      "windmills"]
+      "windmills",
+
+      // from PT in spring 2017
+      "side-lying hip circles",
+      "wall sits with band and glute activation",
+      "pawbacks",
+      "single leg calf raises",
+      "romanian dead lift",
+      "single leg romanian dead lift",
+      "squats facing the wall",
+      "pistol squats",
+      "hamstring swissball curls",
+      "ankle inversion-eversion",
+      "kettle bell swings",
+
+      // second phase PT
+      "ice skaters",
+      "chair planks",
+
+      // favorite bonus exercises
+      "standing russian twist",
+      "lateral pull down",
+      "pull ups (assisted)",
+      "bench press",
+      "swissball leg raise"
+     ]
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -54,3 +79,4 @@ for (var i = 0, name; name = names[i]; i++) {
 }
 nameList += "</ol>"
 document.getElementById('exlist').innerHTML = nameList;
+B
