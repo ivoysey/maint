@@ -79,4 +79,3 @@ for (var i = 0, name; name = names[i]; i++) {
 }
 nameList += "</ol>"
 document.getElementById('exlist').innerHTML = nameList;
-B
